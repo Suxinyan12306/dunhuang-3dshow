@@ -4,6 +4,7 @@ import viteCompression from 'vite-plugin-compression'
 // Vite 配置 - 敦煌 3DShow 数字展馆
 // 针对大体积 glb 模型做分包压缩、Brotli/Gzip 双重传输优化
 export default defineConfig({
+  // 修复模型404，重新打包
   base: '/dunhuang-3dshow/',
   server: {
     port: 3000,
